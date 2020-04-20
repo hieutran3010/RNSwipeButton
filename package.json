@@ -1,7 +1,7 @@
 {
-  "name": "rn-swipe-button",
-  "version": "1.2.6",
-  "description": "react native swipe/slide button component",
+  "name": "ts-rn-swipe-button",
+  "version": "1.0.0-alpha.1",
+  "description": "react native swipe/slide button component. Inspire of rn-swipe-button package from Uday Sravan Kumar Kamineni and do some change to adapt typescript project",
   "main": "index.js",
   "scripts": {
     "test": "echo \\\"Error: no test specified\\\" && exit 1",

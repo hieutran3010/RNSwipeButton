@@ -60,6 +60,7 @@ class SwipeThumb extends React.Component {
     Animated.timing(this.state.animatedWidth, {
       toValue: this.defaultContainerWidth,
       duration: 200,
+      useNativeDriver: false,
     }).start(() => {
       this.reset();
     });
@@ -140,6 +141,7 @@ class SwipeThumb extends React.Component {
     Animated.timing(this.state.animatedWidth, {
       toValue: this.maxWidth,
       duration: 200,
+      useNativeDriver: false,
     }).start(() => {
       if (this.props.onSwipeSuccess) {
         this.props.onSwipeSuccess();
@@ -150,6 +152,7 @@ class SwipeThumb extends React.Component {
         Animated.timing(this.state.animatedWidth, {
           toValue: this.defaultContainerWidth,
           duration: this.props.resetAfterSuccessAnimDuration,
+          useNativeDriver: false,
         }).start(() => this.reset());
       }
     });
